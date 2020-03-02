@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.linearframework"
-version = "0.1.1-SNAPSHOT"
+version = "0.1.2-SNAPSHOT"
 
 java {
   sourceCompatibility = JavaVersion.VERSION_1_8
@@ -15,17 +15,19 @@ java {
 repositories {
   jcenter()
   mavenCentral()
+  maven {
+    url = uri("https://maven.pkg.github.com/linear-framework/linear-web")
+    credentials {
+      username = System.getenv("GITHUB_USER")
+      password = System.getenv("GITHUB_TOKEN")
+    }
+  }
 }
 
 dependencies {
   implementation("org.scala-lang:scala-library:2.13.1")
+  api("com.linearframework:web:0.1.2-SNAPSHOT")
   api("com.fasterxml.jackson.module:jackson-module-scala_2.13:2.10.2")
-
-  // todo: replace the following block with repo-hosted linear-web
-  api(fileTree("lib/linear-web-0.1.1-SNAPSHOT.jar"))
-  implementation("org.scala-lang:scala-reflect:2.13.1")
-  api("com.sparkjava:spark-core:2.9.1")
-  api("org.reflections:reflections:0.9.11")
 
   testImplementation("junit:junit:4.13")
   testImplementation("org.scalatest:scalatest_2.13:3.1.1")
