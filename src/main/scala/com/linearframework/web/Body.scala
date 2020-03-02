@@ -1,4 +1,4 @@
-package com.linearframework.web.openapi.documentation
+package com.linearframework.web
 
 trait Body {
   def Int(description: String): IntSchemaDocumentation = IntSchemaDocumentation(Option(description))

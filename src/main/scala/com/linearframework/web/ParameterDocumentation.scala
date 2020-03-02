@@ -1,4 +1,4 @@
-package com.linearframework.web.openapi.documentation
+package com.linearframework.web
 
 sealed trait ParameterDocumentation {
   private[web] val name: String

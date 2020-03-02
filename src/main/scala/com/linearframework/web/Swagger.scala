@@ -1,7 +1,5 @@
-package com.linearframework.web.openapi
+package com.linearframework.web
 
-import com.linearframework.web._
-import com.linearframework.web.openapi.documentation.EndpointDocumentation
 import scala.collection.mutable
 
 /**

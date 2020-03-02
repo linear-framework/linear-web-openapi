@@ -1,4 +1,4 @@
-package com.linearframework.web.openapi.documentation
+package com.linearframework.web
 
 import java.time.{LocalDate, LocalDateTime}
 import java.util.Date

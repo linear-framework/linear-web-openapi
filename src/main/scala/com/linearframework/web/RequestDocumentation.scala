@@ -1,6 +1,4 @@
-package com.linearframework.web.openapi.documentation
-
-import com.linearframework.web.ContentType
+package com.linearframework.web
 
 case class RequestDocumentation (
   private[web] val description: String,

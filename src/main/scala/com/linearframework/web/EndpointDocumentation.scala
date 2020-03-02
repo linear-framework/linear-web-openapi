@@ -1,6 +1,4 @@
-package com.linearframework.web.openapi.documentation
-
-import com.linearframework.web.{ContentType, HttpStatus, HttpVerb}
+package com.linearframework.web
 
 case class EndpointDocumentation (
   private[web] val method: HttpVerb,

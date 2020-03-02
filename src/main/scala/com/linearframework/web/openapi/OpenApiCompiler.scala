@@ -2,7 +2,6 @@ package com.linearframework.web.openapi
 
 import com.linearframework.web._
 import com.linearframework.web.openapi.model._
-import com.linearframework.web.openapi.documentation._
 
 object OpenApiCompiler {
 
