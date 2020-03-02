@@ -819,7 +819,6 @@ case class ObjectSchemaDocumentation(
         field.setAccessible(false)
         name -> generateSchema(name, value)
       }
-      .filter(_._1 != "com$sproutscala$validation$Validation$$validationRules") // todo: figure out why transient fields are being serialized
       .toMap
   }
 
