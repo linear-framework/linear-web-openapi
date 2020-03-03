@@ -5,7 +5,6 @@ plugins {
 }
 
 group = "com.linearframework"
-version = "0.1.2-SNAPSHOT"
 
 java {
   sourceCompatibility = JavaVersion.VERSION_1_8
@@ -26,7 +25,7 @@ repositories {
 
 dependencies {
   implementation("org.scala-lang:scala-library:2.13.1")
-  api("com.linearframework:web:0.1.2-SNAPSHOT")
+  api("com.linearframework:web:" + version)
   api("com.fasterxml.jackson.module:jackson-module-scala_2.13:2.10.2")
 
   testImplementation("junit:junit:4.13")
