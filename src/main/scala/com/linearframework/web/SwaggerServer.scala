@@ -78,6 +78,7 @@ object SwaggerServer {
           override protected val staticFiles: Option[StaticFilesConfiguration] = conf.staticFiles
           override protected val ssl: Option[SslConfiguration] = conf.ssl
           override private[web] val registry = conf.registry
+          override private[web] val deserializers = conf.deserializers
 
           override protected def afterControllersRegistered(): Unit = {
             super.afterControllersRegistered()
